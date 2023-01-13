@@ -17,11 +17,11 @@ h4
   <hr>
   <h4>Header Paragraph</h4>
   <h4>Header Paragraph</h4>
-  <button>x2</button>  <h4>Header Paragraph</h4>
-  <button>x2</button>  <h4>Header Paragraph</h4>
-  <button>x2</button>  <h4>Header Paragraph</h4>
-  <button>x2</button>  <h4>Header Paragraph</h4>
-  <button>x2</button>  <h4>Header Paragraph</h4>
+  <button>x2</button>  
+  <button>x2</button>  
+
+
+
 
 
 
@@ -35,6 +35,12 @@ h4
 <style scoped>
 h2 {
   padding: 1rem;
+}
+
+.invisible {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .bgImg {
