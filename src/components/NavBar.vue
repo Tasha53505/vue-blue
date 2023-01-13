@@ -19,7 +19,8 @@ import { RouterLink, RouterView } from 'vue-router'
 nav {
 font-size: 1.5em;
 font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-background-color: rgb(126, 206, 243);
+/* background-color: rgb(126, 206, 243); */
+background-color: #1E97BC;
 width: 100%;
 padding: 0.8em;
 }
@@ -31,7 +32,7 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  color: rgb(53, 128, 179,);
+  color: rgb(255, 255, 255);
 }
 
 nav a {
