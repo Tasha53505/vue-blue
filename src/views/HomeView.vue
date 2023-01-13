@@ -3,6 +3,35 @@
 
 <template>
   <main>
-    <h2>lorem</h2>
+  <!-- Div for image
+NavBAr
+Header
+image float right
+Hr line
+h4
+2 buttons -->
+
+<div class="bgImg">
+  <h2>Header</h2>
+  <img src="" alt="img">
+  <hr>
+  <h4>Header Paragraph</h4>
+  <button>x</button>
+  <button>x2</button>
+</div>
+
+
 </main>
 </template>
+
+<style scoped>
+h2 {
+  padding: 1rem;
+}
+
+.bgImg {
+  background-image: url("src/assets/images/backgroundTransparent.png");
+  width: 100%;
+  height: 100%;
+}
+</style>

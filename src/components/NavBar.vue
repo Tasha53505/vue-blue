@@ -1,10 +1,5 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+
 </script>
 <script>
 import { RouterLink, RouterView } from 'vue-router'
@@ -22,10 +17,30 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 nav {
-font-size: 20px;
+font-size: 1.5em;
 font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-color: blueviolet;
+background-color: rgb(126, 206, 243);
+width: 100%;
+padding: 0.8em;
+}
 
+
+nav a.router-link-exact-active {
+  color: white;
+  font-weight: 550;
+}
+
+nav a.router-link-exact-active:hover {
+  color: rgb(53, 128, 179,);
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+nav a:first-of-type {
+  border: 0;
 }
 
 
