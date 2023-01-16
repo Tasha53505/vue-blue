@@ -23,17 +23,59 @@ h4
  
 </div>
 <!-- After blue content - Meet tht team -->
-<div  class="meetContainer">
-  <h4>Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
-  <h1 class="meetTitle">More than 500 companies want a website from us</h1>
+<div  class="meetContainerRow">
+  <div class="meetRowColumn">
+      <h4 class="columnOne">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
+      <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
+  </div>
+</div>
+
+
+
+<!-- testing HTML -->
+<div class="parent">
+  <div class="child">
+    <h2>This is the Left</h2>
+  </div>
+
+  <div class="child2">
+    <h2>This is the right</h2>
+  </div>
 
 </div>
 
+<!-- -------------------------- -->
 
 </main>
 </template>
 
 <style scoped>
+/* Testing CSS  */
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.child {
+  width: 100%;
+  height: 40vh;
+  background-color: pink;
+  text-align: center;
+  color: black;
+}
+
+.child2 {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(255, 140, 140);
+  text-align: center;
+
+}
+
+
+
+
+/* ------------------------- */
 h2, h1  {
   padding: 1rem;
   color: white;
@@ -54,7 +96,7 @@ h2, h1  {
 .bgImg {
   background-image: url("src/assets/images/backgroundTransparent.png");
   width: 100%;
-  height: 70vh;
+  height: 52vh;
 }
 
 .slogan {
@@ -97,7 +139,7 @@ float: right;
 /* display: flex;
 flex-direction: column;
 margin: auto; */
-width: 55%;
+width: 20%;
 position: relative;
 top: -8rem;
 
@@ -142,12 +184,14 @@ button {
   color: white;
 }
 /* Meeet the team  */
-.meetContainer {
+.meetContainerRow {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+
 }
+
 .meetTitle {
   color: black;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -155,6 +199,7 @@ button {
   font-size: 35px;
   
 }
+
 
 
 
