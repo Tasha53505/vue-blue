@@ -20,13 +20,13 @@ h4
 
   <button class="learnBtn" id="learnMore">Learn more</button>  
   <button class="galleryBtn">Gallery </button>  
+ 
+</div>
+<!-- After blue content - Meet tht team -->
+<div  class="meetContainer">
+  <h4>Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
+  <h1 class="meetTitle">More than 500 companies want a website from us</h1>
 
-
-
-
-
-
-  
 </div>
 
 
@@ -54,7 +54,7 @@ h2, h1  {
 .bgImg {
   background-image: url("src/assets/images/backgroundTransparent.png");
   width: 100%;
-  height: 80vh;
+  height: 70vh;
 }
 
 .slogan {
@@ -140,6 +140,20 @@ button {
   border: none;
   font-size: 15px;
   color: white;
+}
+/* Meeet the team  */
+.meetContainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.meetTitle {
+  color: black;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  width: 60%;
+  font-size: 35px;
+  
 }
 
 
