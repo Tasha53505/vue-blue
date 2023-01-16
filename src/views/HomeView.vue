@@ -11,14 +11,15 @@ Hr line
 h4
 2 buttons -->
 
-<div class="bgImg">
+<div class="bgImg container">
   <h2>Tech Support Brought to you by</h2>
-  <h1>Brand name Here</h1>
+  <h1 class="brandTitle">Brand name Here</h1>
   <img src="src/assets/images/techSupport.png" alt="img" class="homeImg">
   <hr>
-  <h4>Slogan  Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
-  <button>Button 1</button>  
-  <button>Button 2</button>  
+  <h4 class="slogan">Slogan  Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+
+  <button class="learnBtn" id="learnMore">Learn more</button>  
+  <button class="galleryBtn">Gallery </button>  
 
 
 
@@ -36,6 +37,12 @@ h4
 h2, h1  {
   padding: 1rem;
   color: white;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.brandTitle {
+  margin-top: -25px;
 }
 
 .invisible {
@@ -47,8 +54,19 @@ h2, h1  {
 .bgImg {
   background-image: url("src/assets/images/backgroundTransparent.png");
   width: 100%;
-  height: 100%;
+  height: 80vh;
 }
+
+.slogan {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+  color: white;
+  margin-top: 0.5em;
+
+}
+
+
+
 hr {
   width: 15%;
   border: none;
@@ -79,7 +97,71 @@ float: right;
 /* display: flex;
 flex-direction: column;
 margin: auto; */
-width: 50%;
+width: 55%;
+position: relative;
+top: -8rem;
+
+}
+
+.container {
+
+}
+
+.flexItem {
+
+}
+/* ------ Buttons --------  */
+button {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+
+}
+
+.learnBtn {
+  padding: 0.5em;
+  background-color: white;
+  border: white solid 4px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+.learnBtn:hover {
+  border-radius: 15px;
+  transition: 0.4;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+
+.galleryBtn {
+  padding: 0.5em;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: white;
+}
+
+
+
+@media (max-width: 1024px) {
+.bgImg {
+  background-image: url("src/assets/images/backgroundTransparentMedia.png");
+  width: 100%;
+  height: 80vh;
+}
+
+.homeImg {
+/* display: flex;
+flex-direction: column;
+margin: auto; */
+
+}
+
+h2 {
+  /* font-size: 1px; */
+}
+
 
 }
 </style>
