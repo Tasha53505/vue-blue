@@ -40,9 +40,19 @@ h4
   </div>
 
   <div class="child2">
-    <h2>This is the right</h2>
-    <img src="src/assets/images/femaleAvatar.svg" alt="femaleAvatar" class="femaleAvatar">
+    <!-- <h2>This is the right</h2> -->
+    <div class="cardContainer">
+      <img src="src/assets/images/femaleAvatar.svg" alt="femaleAvatar" class="femaleAvatar">
+      <h3 class="cardName">Bold Name</h3>
+      <a href="test"><img src="src/assets/images/arrow.svg" alt=""></a>
+
+    </div>
+    <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ipsam alias quas consequuntur aliquam corrupti temporibus incidunt veritatis! Eos tempora nisi officia corrupti dolores ut.</p>
+
   </div>
+
+  
+  
 
 </div>
 
@@ -53,6 +63,26 @@ h4
 
 <style scoped>
 /* Testing CSS  */
+.cardText {
+  text-align: left;
+  margin-left: 1em;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+}
+.cardName {
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 1rem;
+}
+
+.cardColumn {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
 .parent {
   display: flex;
   flex-direction: row;
@@ -71,14 +101,25 @@ h4
 .child2 {
   width: 100%;
   height: 30vh;
-  background-color: rgb(173, 236, 255);
+  /* background-color: rgb(173, 236, 255); */
   text-align: center;
 
 }
 
 /* ----------- Images ------------ */
+.cardContainer {
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+}
+
+
 .femaleAvatar {
-  width: 15%;
+  width: 8rem;
+  margin: 1rem;
+  
 }
 
 .homeImg {
@@ -86,7 +127,7 @@ float: right;
 /* display: flex;
 flex-direction: column;
 margin: auto; */
-width: 30rem;
+width: 25rem;
 position: relative;
 top: -8rem;
 
@@ -96,7 +137,6 @@ top: -8rem;
 h2, h1  {
   padding: 1rem;
   color: white;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -117,7 +157,6 @@ h2, h1  {
 }
 
 .slogan {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: large;
   color: white;
   margin-top: 0.5em;
