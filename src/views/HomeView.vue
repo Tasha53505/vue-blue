@@ -14,7 +14,7 @@ h4
 <div class="bgImg container">
   <h2>Tech Support Brought to you by</h2>
   <h1 class="brandTitle">Brand name Here</h1>
-  <img src="src/assets/images/techSupport.png" alt="img" class="homeImg">
+  <img src="src/assets/images/HomeImgTech.svg" alt="img" class="homeImg">
   <hr>
   <h4 class="slogan">Slogan  Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
 
@@ -22,24 +22,26 @@ h4
   <button class="galleryBtn">Gallery </button>  
  
 </div>
-<!-- After blue content - Meet tht team -->
+<!-- After blue content - Meet tht team
 <div  class="meetContainerRow">
   <div class="meetRowColumn">
       <h4 class="columnOne">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
       <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
   </div>
-</div>
+</div> -->
 
 
 
 <!-- testing HTML -->
 <div class="parent">
   <div class="child">
-    <h2>This is the Left</h2>
+    <h4 class="columnOne">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
+    <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
   </div>
 
   <div class="child2">
     <h2>This is the right</h2>
+    <img src="src/assets/images/femaleAvatar.svg" alt="femaleAvatar" class="femaleAvatar">
   </div>
 
 </div>
@@ -58,22 +60,37 @@ h4
 
 .child {
   width: 100%;
-  height: 40vh;
-  background-color: pink;
-  text-align: center;
+  height: 30vh;
+  /* background-color: rgb(214, 245, 255); */
+  text-align: left;
   color: black;
+  padding-left: 1rem;
+
 }
 
 .child2 {
   width: 100%;
-  height: 40vh;
-  background-color: rgb(255, 140, 140);
+  height: 30vh;
+  background-color: rgb(173, 236, 255);
   text-align: center;
 
 }
 
+/* ----------- Images ------------ */
+.femaleAvatar {
+  width: 15%;
+}
 
+.homeImg {
+float: right;
+/* display: flex;
+flex-direction: column;
+margin: auto; */
+width: 30rem;
+position: relative;
+top: -8rem;
 
+}
 
 /* ------------------------- */
 h2, h1  {
@@ -134,16 +151,7 @@ h1 {
   font-size: 42px;
 }
 
-.homeImg {
-float: right;
-/* display: flex;
-flex-direction: column;
-margin: auto; */
-width: 20%;
-position: relative;
-top: -8rem;
 
-}
 
 .container {
 
