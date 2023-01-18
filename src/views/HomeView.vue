@@ -11,6 +11,7 @@ Hr line
 h4
 2 buttons -->
 
+
 <div class="bgImg container">
   <h2>Tech Support Brought to you by</h2>
   <h1 class="brandTitle">Brand name Here</h1>
@@ -22,6 +23,7 @@ h4
   <button class="galleryBtn">Gallery </button>  
  
 </div>
+
 
 
 
@@ -60,7 +62,21 @@ h4
 
 <style scoped>
 /* Testing CSS  */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background: url("src/assets/images/backgroundTransparent.png");
+  height: 70vh;
+}
 
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
 
 .cardText {
   text-align: left;
@@ -213,6 +229,10 @@ h1 {
 .flexItem {
 
 }
+
+a {
+  width: 20%;
+}
 /* ------ Buttons --------  */
 button {
   margin-left: 1rem;
@@ -284,21 +304,59 @@ button {
 
 
 @media (max-width: 1024px) {
+
+
 .bgImg {
-  background-image: url("src/assets/images/backgroundTransparentMedia.png");
+  background-image: url("src/assets/images/backgroundTransparentMediaOne.png");
   width: 100%;
-  height: 80vh;
+  height: 35vh;
 }
 
 .homeImg {
-/* display: flex;
-flex-direction: column;
-margin: auto; */
-
+/* float: right;
+width: 25rem;
+position: relative;
+top: -8rem;*/
+width: 20rem;
+} 
+h1 {
+  font-size: 25px;
 }
 
 h2 {
-  /* font-size: 1px; */
+font-size: 15px;
+}
+
+.cardName {
+  font-size: 25px;
+  width: 100%;
+}
+
+.cardText {
+  font-size: 14px;
+}
+
+a {
+  width: 10%;
+}
+.madeBtn {
+  font-size: 15px;
+}
+.femaleAvatar {
+  width: 5rem;
+}
+
+.meetTitle {
+  font-size: 22px;
+  width: 100%;
+}
+
+.slogan {
+  font-size: 15px;
+}
+
+.learnBtn .galleryBtn {
+  font-size: 12px;
 }
 
 
