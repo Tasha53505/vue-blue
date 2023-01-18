@@ -22,13 +22,7 @@ h4
   <button class="galleryBtn">Gallery </button>  
  
 </div>
-<!-- After blue content - Meet tht team
-<div  class="meetContainerRow">
-  <div class="meetRowColumn">
-      <h4 class="columnOne">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
-      <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
-  </div>
-</div> -->
+
 
 
 
@@ -37,6 +31,7 @@ h4
   <div class="child">
     <h4 class="columnOne">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
     <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
+    <button class="madeBtn">What We've Made</button>
   </div>
 
   <div class="child2">
@@ -44,8 +39,10 @@ h4
     <div class="cardContainer">
       <img src="src/assets/images/femaleAvatar.svg" alt="femaleAvatar" class="femaleAvatar">
       <h3 class="cardName">Bold Name</h3>
-      <a href="test"><img src="src/assets/images/arrow.svg" alt=""></a>
 
+      <a href="about">
+      <img src="src/assets/images/arrow.svg" alt="arrow" class="arrowImg">
+    </a>
     </div>
     <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ipsam alias quas consequuntur aliquam corrupti temporibus incidunt veritatis! Eos tempora nisi officia corrupti dolores ut.</p>
 
@@ -63,6 +60,8 @@ h4
 
 <style scoped>
 /* Testing CSS  */
+
+
 .cardText {
   text-align: left;
   margin-left: 1em;
@@ -107,6 +106,8 @@ body {
 }
 
 /* ----------- Images ------------ */
+
+
 .cardContainer {
   /* background-color: pink; */
   display: flex;
@@ -132,6 +133,19 @@ position: relative;
 top: -8rem;
 
 }
+
+.arrowImg {
+width: 60px;
+margin-left: 2rem;
+}
+
+.arrowImg:hover {
+  border-radius: 15px;
+  transition: 0.4;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  }
+
+
 
 /* ------------------------- */
 h2, h1  {
@@ -230,6 +244,25 @@ button {
   font-size: 15px;
   color: white;
 }
+
+.madeBtn {
+  padding: 0.5em;
+  background-color: #37a0c1;
+  border: #37a0c1 solid 4px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.madeBtn:hover  {
+  border-radius: 15px;
+  transition: 0.4;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+}
+
+
 /* Meeet the team  */
 .meetContainerRow {
   padding: 1rem;
