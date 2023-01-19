@@ -309,7 +309,7 @@ button {
 .bgImg {
   background-image: url("src/assets/images/backgroundTransparentMediaOne.png");
   width: 100%;
-  height: 35vh;
+  height: 42vh;
 }
 
 .homeImg {
@@ -330,10 +330,13 @@ font-size: 15px;
 .cardName {
   font-size: 25px;
   width: 100%;
+
 }
 
 .cardText {
   font-size: 14px;
+  width: 40rem;
+  text-align: center;
 }
 
 a {
@@ -341,6 +344,9 @@ a {
 }
 .madeBtn {
   font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 .femaleAvatar {
   width: 5rem;
@@ -349,7 +355,9 @@ a {
 .meetTitle {
   font-size: 22px;
   width: 100%;
+  text-align: center;
 }
+
 
 .slogan {
   font-size: 15px;
@@ -359,6 +367,47 @@ a {
   font-size: 12px;
 }
 
+.arrowImg {
+  margin-left: 0;
+  margin-right: 400px;
+  
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.cardColumn {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.child {
+  width: 100%;
+  height: 25vh;
+  /* background-color: rgb(214, 245, 255); */
+  text-align: left;
+  color: black;
+  padding-left: 1rem;
+
+}
+.cardText {
+text-align: center;
+}
+
+.cardName {
+  margin-right: 200px;
+  width: 20rem;
+}
+
+.femaleAvatar {
+  width: 100px;
+}
 
 }
 </style>
