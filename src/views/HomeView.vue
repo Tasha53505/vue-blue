@@ -31,7 +31,7 @@ h4
 <!-- testing HTML -->
 <div class="parent">
   <div class="child">
-    <h4 class="columnOne">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
+    <h4 class="cardSlogan">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
     <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
     <button class="madeBtn">What We've Made</button>
   </div>
@@ -405,9 +405,16 @@ text-align: center;
   width: 20rem;
 }
 
+.cardSlogan {
+  text-align: center;
+}
+
 .femaleAvatar {
   width: 100px;
 }
+
+
+
 
 }
 </style>
