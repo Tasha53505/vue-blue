@@ -46,4 +46,11 @@ nav a:first-of-type {
 }
 
 
+@media (max-width: 1024px) {
+nav a {
+  font-size: 20px;
+}
+}
+
+
 </style>

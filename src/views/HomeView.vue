@@ -13,9 +13,12 @@ h4
 
 
 <div class="bgImg container">
+  <div class="homeImgContainer">
   <h2>Tech Support Brought to you by</h2>
   <h1 class="brandTitle">Brand name Here</h1>
+  
   <img src="src/assets/images/HomeImgTech.svg" alt="img" class="homeImg">
+
   <hr>
   <h4 class="slogan">Slogan  Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
 
@@ -23,12 +26,12 @@ h4
   <button class="galleryBtn">Gallery </button>  
  
 </div>
+</div>
 
 
 
 
 
-<!-- testing HTML -->
 <div class="parent">
   <div class="child">
     <h4 class="cardSlogan">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
@@ -46,8 +49,9 @@ h4
       <img src="src/assets/images/arrow.svg" alt="arrow" class="arrowImg">
     </a>
     </div>
-    <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ipsam alias quas consequuntur aliquam corrupti temporibus incidunt veritatis! Eos tempora nisi officia corrupti dolores ut.</p>
-
+    <div class="cardTextContainer">
+      <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ipsam alias quas consequuntur aliquam corrupti temporibus incidunt veritatis! Eos tempora nisi officia corrupti dolores ut.</p>
+    </div>
   </div>
 
   
@@ -62,6 +66,13 @@ h4
 
 <style scoped>
 /* Testing CSS  */
+
+.cardTextContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -312,13 +323,6 @@ button {
   height: 42vh;
 }
 
-.homeImg {
-/* float: right;
-width: 25rem;
-position: relative;
-top: -8rem;*/
-width: 20rem;
-} 
 h1 {
   font-size: 25px;
 }
@@ -337,6 +341,8 @@ a {
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 20px;
+
 }
 .femaleAvatar {
   width: 5rem;
@@ -379,7 +385,7 @@ a {
 
 .child {
   width: 100%;
-  height: 25vh;
+  height: 20vh;
   /* background-color: rgb(214, 245, 255); */
   text-align: left;
   color: black;
@@ -403,6 +409,8 @@ font-size: 14px;
 
 .cardSlogan {
   text-align: center;
+  margin-top: 5rem;
+
 }
 
 .femaleAvatar {
@@ -413,6 +421,30 @@ font-size: 14px;
 .cardContainer {
   justify-content: center;  
 }
+
+.cardTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top section, everything on blue background */
+
+.homeImg {
+position: absolute;
+margin-top: 210px;
+width: 20rem;
+margin-bottom: 20px;
+top: 0%;
+
+} 
+
+.homeImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 }
 </style>
