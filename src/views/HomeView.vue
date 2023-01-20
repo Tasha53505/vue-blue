@@ -327,17 +327,7 @@ h2 {
 font-size: 15px;
 }
 
-.cardName {
-  font-size: 25px;
-  width: 100%;
 
-}
-
-.cardText {
-  font-size: 14px;
-  width: 40rem;
-  text-align: center;
-}
 
 a {
   width: 10%;
@@ -396,14 +386,20 @@ a {
   padding-left: 1rem;
 
 }
-.cardText {
+.cardText  {
 text-align: center;
+font-size: 14px;
+  width: 40rem;
+  text-align: center;
 }
 
 .cardName {
-  margin-right: 200px;
   width: 20rem;
+  text-align: center;
+  font-size: 25px;
 }
+
+
 
 .cardSlogan {
   text-align: center;
@@ -414,7 +410,9 @@ text-align: center;
 }
 
 
-
+.cardContainer {
+  justify-content: center;  
+}
 
 }
 </style>
