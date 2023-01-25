@@ -41,6 +41,7 @@ h4
 
   <div class="child2">
     <!-- <h2>This is the right</h2> -->
+
     <div class="cardContainer">
       <img src="src/assets/images/femaleAvatar.svg" alt="femaleAvatar" class="femaleAvatar">
       <h3 class="cardName">Bold Name</h3>
@@ -53,10 +54,40 @@ h4
       <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ipsam alias quas consequuntur aliquam corrupti temporibus incidunt veritatis! Eos tempora nisi officia corrupti dolores ut.</p>
     </div>
   </div>
+</div>
 
-  
-  
+<div class="statsContainer">
+  <div class="stats">
+    <div class="statsItem">
+      <span class="statsPercent">65%</span>
+      <div class="statsBar"></div>
+      <span class="statsTitle">Title</span>
+    </div>
 
+    <div class="statsItem">
+      <span class="statsPercent">80%</span>
+      <div class="statsBar"></div>
+      <span class="statsTitle">Title</span>
+    </div>
+
+    <div class="statsItem">
+      <span class="statsPercent">90%</span>
+      <div class="statsBar"></div>
+      <span class="statsTitle">Title</span>
+    </div>
+
+    <span class="lowerText">Title of graph overall</span>
+  </div>
+
+  <div class="statsTextContainer">
+    <p>text</p>
+  </div>
+</div>
+
+
+<div class="testParent">
+  <div class="testChild">
+  </div>
 </div>
 
 <!-- -------------------------- -->
@@ -66,6 +97,33 @@ h4
 
 <style scoped>
 /* Testing CSS  */
+
+
+.statsContainer {
+/* This is the parent */
+display: flex;
+flex-direction: row;
+padding: 1rem;
+margin-top: 2rem;
+
+}
+
+.statsImage {
+  /* This is the child one */
+  width: 50%;
+  text-align: left;
+  color: black;
+  padding-left: 1rem;
+  background-color: #d0eaf1;
+}
+
+.statsTextContainer {
+  /* Child 2 */
+  background-color: rgb(155, 199, 228);
+  width: 50%;
+
+
+}
 
 .cardTextContainer {
   display: flex;
@@ -336,14 +394,7 @@ font-size: 15px;
 a {
   width: 10%;
 }
-.madeBtn {
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-top: 20px;
 
-}
 .femaleAvatar {
   width: 5rem;
 }
@@ -417,9 +468,17 @@ font-size: 14px;
   width: 100px;
 }
 
+.madeBtn {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
 
+}
 .cardContainer {
   justify-content: center;  
+  margin-top: 50px;
 }
 
 .cardTextContainer {
