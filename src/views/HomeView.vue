@@ -60,27 +60,30 @@ h4
   <div class="stats">
     <div class="statsItem">
       <span class="statsPercent">65%</span>
-      <div class="statsBar"></div>
-      <span class="statsTitle">Title</span>
+      <div class="statsBar" style="--percentage: 62%;"></div>
+      <span class="statsTitle">Something 1</span>
     </div>
 
     <div class="statsItem">
       <span class="statsPercent">80%</span>
-      <div class="statsBar"></div>
-      <span class="statsTitle">Title</span>
+      <div class="statsBar" style="--percentage: 80%;"></div>
+      <span class="statsTitle">Something 2</span>
     </div>
 
     <div class="statsItem">
       <span class="statsPercent">90%</span>
-      <div class="statsBar"></div>
-      <span class="statsTitle">Title</span>
+      <div class="statsBar" style="--percentage: 90%;"></div>
+      <span class="statsTitle">Something 3</span>
     </div>
 
-    <span class="lowerText">Title of graph overall</span>
+    <!-- <span class="lowerText">Title of graph overall</span> -->
   </div>
 
   <div class="statsTextContainer">
-    <p>text</p>
+    <div class="statsCard">
+      <h2 class="statsCardTitle">Companies "Somethings" improved tremendously. <br> Guaranteed 90% of Something 3</h2>  
+      <button>Heh</button>
+    </div>    
   </div>
 </div>
 
@@ -90,7 +93,6 @@ h4
   </div>
 </div>
 
-<!-- -------------------------- -->
 
 </main>
 </template>
@@ -98,7 +100,31 @@ h4
 <style scoped>
 /* Testing CSS  */
 
+/* ------------ STATS Animation ------------ */
+/* .statsImage {
+  width: 50%;
+  text-align: left;
+  color: black;
+  padding-left: 1rem;
+  background-color: #07313d;
+} */
 
+.statsTextContainer {
+  /* Child 2 */
+  background-color: rgb(221, 237, 255);
+  width: 100%;
+
+}
+
+.statsCard {
+  padding: 50px;
+  background: pink;
+  margin: 30px 30px 30px 30px;
+
+}
+.statsCardTitle {
+  font-size: 22px;
+}
 .statsContainer {
 /* This is the parent */
 display: flex;
@@ -108,22 +134,74 @@ margin-top: 2rem;
 
 }
 
-.statsImage {
-  /* This is the child one */
-  width: 50%;
-  text-align: left;
-  color: black;
-  padding-left: 1rem;
-  background-color: #d0eaf1;
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40%;
+  margin-right: 50px;
 }
 
-.statsTextContainer {
-  /* Child 2 */
-  background-color: rgb(155, 199, 228);
-  width: 50%;
 
+.statsItem {
+  text-align: center;
+}
+
+.statsBar {
+  width: 67px;
+  height: 150px;
+  margin: 20px 5px;
+  border-radius: 4px;
+  background: #37A0C1;
+  overflow: hidden;
+  position: relative;
+
+  width: 80px;
+  height: 250px;
+  margin: 20px 10px 5px;
+  border-radius: 4px;
+  background: #37A0C1;
+  overflow: hidden;
+  position: relative;
 
 }
+
+.statsBar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #c7e1e9;
+  animation: barsIn 1.5s ease-in-out forwards;
+}
+
+.lowerText {
+  display: block;
+	text-align: left;
+	margin-top: 30px;
+	opacity: 0.5;
+	letter-spacing: 0.5px;
+}
+
+
+@keyframes barsIn {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: var(--percentage);
+  }
+}
+
+
+
+
+
+
+/* ------------ Stats animation end ------------  */
+
+
 
 .cardTextContainer {
   display: flex;
