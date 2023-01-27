@@ -1,5 +1,4 @@
-<script setup>
-</script>
+
 
 <template>
   <main>
@@ -43,7 +42,7 @@ h4
     <!-- <h2>This is the right</h2> -->
 
     <div class="cardContainer">
-      <img src="src/assets/images/femaleAvatar.svg" alt="femaleAvatar" class="femaleAvatar">
+      <img :src="femaleAvatarHover" @mouseover="hover = true" @mouseleave="hover = false" alt="femaleAvatar" class="femaleAvatar">
       <h3 class="cardName">Bold Name</h3>
 
       <a href="about">
@@ -97,10 +96,31 @@ h4
 </main>
 </template>
 
+
 <script>
-var femaleAvatar = document.getElementsByClassName('src/assets/images/femaleAvatar.svg')
-var femaleAvatarWave = document.get
+export default {
+  name: 'HomeView',
+  data () {
+    return {
+      femaleAvatar: "src/assets/images/femaleAvatar.svg",
+      femaleAvatarWave: "src/assets/images/femaleAvatarWave.svg",
+      hover: false
+    }
+  },
+  computed: {
+    femaleAvatarHover() {
+      if(this.hover == true) {
+        return this.femaleAvatarWave
+      } else {
+        return this.femaleAvatar
+      }
+    }
+  }
+}
+
 </script>
+
+
 
 <style scoped>
 /* Testing CSS  */
@@ -283,8 +303,9 @@ body {
 
 
 .femaleAvatar {
-  width: 8rem;
+  width: 10rem;
   margin: 1rem;
+  cursor: pointer;
   
 }
 
