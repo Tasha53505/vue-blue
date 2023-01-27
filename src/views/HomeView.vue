@@ -97,6 +97,11 @@ h4
 </main>
 </template>
 
+<script>
+var femaleAvatar = document.getElementsByClassName('src/assets/images/femaleAvatar.svg')
+var femaleAvatarWave = document.get
+</script>
+
 <style scoped>
 /* Testing CSS  */
 
@@ -118,7 +123,7 @@ h4
 
 .statsCard {
   padding: 50px;
-  background: pink;
+  background: #37A0C1;
   margin: 30px 30px 30px 30px;
 
 }
@@ -200,9 +205,6 @@ margin-top: 2rem;
 
 
 /* ------------ Stats animation end ------------  */
-
-
-
 .cardTextContainer {
   display: flex;
   flex-direction: row;
