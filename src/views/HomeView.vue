@@ -34,7 +34,7 @@ h4
 <div class="parent">
   <div class="child">
     <h4 class="cardSlogan">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
-    <h1 class="meetTitle">More than 5000000 companies want a website from us</h1>
+    <h1 class="meetTitle">More than 5,000,000 companies want a website from us</h1>
     <button class="madeBtn">What We've Made</button>
   </div>
 
@@ -80,8 +80,11 @@ h4
 
   <div class="statsTextContainer">
     <div class="statsCard">
-      <h2 class="statsCardTitle">Companies "Somethings" improved tremendously. <br> Guaranteed 90% of Something 3</h2>  
-      <button>Heh</button>
+      <h2 class="statsCardTitle">Companies "Somethings" improved tremendously. <br> Guaranteed 90% of Something 3!</h2>  
+      <div class="modalBtnContainer">
+        <button class="modalBtn">See How (Modal Button!)</button>
+      </div>
+    
     </div>    
   </div>
 </div>
@@ -134,21 +137,63 @@ export default {
   background-color: #07313d;
 } */
 
+.modalBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.modalBtn {
+  padding: 0.5em;
+  background-color: #37a0c1;
+  border: #37a0c1 solid 4px;
+  border-radius: 15px;
+  text-align: center;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  color: white;
+  display: flex;
+}
+
+.modalBtn:hover {
+  border-radius: 15px;
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+
+}
 .statsTextContainer {
   /* Child 2 */
   background-color: rgb(221, 237, 255);
-  width: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 
 }
 
 .statsCard {
   padding: 50px;
-  background: #37A0C1;
+  background: #b3dce9;
   margin: 30px 30px 30px 30px;
+  /* align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;  
+   */
 
 }
 .statsCardTitle {
   font-size: 22px;
+  text-align: center;
+  /* color: #000; */
+  font-weight: 600;
 }
 .statsContainer {
 /* This is the parent */
@@ -156,6 +201,8 @@ display: flex;
 flex-direction: row;
 padding: 1rem;
 margin-top: 2rem;
+
+
 
 }
 
