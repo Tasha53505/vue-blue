@@ -211,6 +211,7 @@ margin-top: 2rem;
   justify-content: space-between;
   margin-right: 40%;
   margin-right: 50px;
+  padding-right: 500px;
 }
 
 
