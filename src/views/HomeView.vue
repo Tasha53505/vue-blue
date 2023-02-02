@@ -56,6 +56,7 @@ h4
 </div>
 
 <div class="statsContainer">
+<div class="animationContainer">
   <div class="stats">
     <div class="statsItem">
       <span class="statsPercent">65%</span>
@@ -77,6 +78,7 @@ h4
 
     <!-- <span class="lowerText">Title of graph overall</span> -->
   </div>
+</div>
 
   <div class="statsTextContainer">
     <div class="statsCard">
@@ -164,6 +166,12 @@ export default {
   align-self: center;
 
 }
+
+/* .animationContainer {
+  background-color: rgb(224, 241, 255);
+  padding: 20px;
+  ;
+} */
 .statsTextContainer {
   /* Child 2 */
   background-color: rgb(221, 237, 255);
@@ -211,7 +219,6 @@ margin-top: 2rem;
   justify-content: space-between;
   margin-right: 40%;
   margin-right: 50px;
-  padding-right: 500px;
 }
 
 
