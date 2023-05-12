@@ -2,15 +2,8 @@
 
 <template>
   <main>
-  <!-- Div for image
-NavBAr
-Header
-image float right
-Hr line
-h4
-2 buttons -->
 
-
+<!-- Blue banner home page, displays the slanted blue container with the learnMore button -->
 <div class="bgImg container">
   <div class="homeImgContainer">
   <h2>Tech Support Brought to you by</h2>
@@ -20,17 +13,41 @@ h4
 
   <hr>
   <h4 class="slogan">Slogan  Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+<!-- Transition Vue 
+ENTERING PAGE
+  .enter-from - set intiial css state
+  .enter-to - as it enters the browser
+  .enter-active - while the element is transitioning from one state to another (time duration)
 
+LEAVING PAGE
+.leave-from
+.leave-to
+.leave-active
+
+TRANSITION NAMES
+<transition name="fade">
+  .fade-enter-from 
+  .fade-enter-to
+  .fade-enter-active 
+  etc
+
+ -->
+
+<transition>
+  <div class="transitionTest" v-if="showP">
   <button class="learnBtn" id="learnMore">Learn more</button>  
   <button class="galleryBtn">Gallery </button>  
- 
+  <!-- Toggle inline -->
+    <button @click="showP = !showP">toggle</button>
+</div>
+</transition>
 </div>
 </div>
 
 
 
 
-
+<!-- T -->
 <div class="parent">
   <div class="child">
     <h4 class="cardSlogan">Slogan Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h4>
@@ -39,12 +56,13 @@ h4
   </div>
 
   <div class="child2">
-    <!-- <h2>This is the right</h2> -->
 
+    <!-- This is the avatar profile pictuere, that when on hover, it will wave.  -->
     <div class="cardContainer">
-      <img :src="femaleAvatarHover" @mouseover="hover = true" @mouseleave="hover = false" alt="femaleAvatar" class="femaleAvatar">
+      <img :src="femaleAvatarHover" @mouseover="hoverFemaleImg = true" @mouseleave="hoverFemaleImg = false" alt="femaleAvatar" class="femaleAvatar">
       <h3 class="cardName">Bold Name</h3>
 
+  <!-- Button with broken arrow SVG -->
       <a href="about">
       <img src="src/assets/images/arrow.svg" alt="arrow" class="arrowImg">
     </a>
@@ -55,6 +73,8 @@ h4
   </div>
 </div>
 
+<!-- Statistics animation -->
+<!-- Bar 1 -->
 <div class="statsContainer">
 <div class="animationContainer">
   <div class="stats">
@@ -64,19 +84,19 @@ h4
       <span class="statsTitle">Something 1</span>
     </div>
 
+<!-- Bar 2 -->
     <div class="statsItem">
       <span class="statsPercent">80%</span>
       <div class="statsBar" style="--percentage: 80%;"></div>
       <span class="statsTitle">Something 2</span>
     </div>
-
+<!-- Bar 3 -->
     <div class="statsItem">
       <span class="statsPercent">90%</span>
       <div class="statsBar" style="--percentage: 90%;"></div>
       <span class="statsTitle">Something 3</span>
     </div>
 
-    <!-- <span class="lowerText">Title of graph overall</span> -->
   </div>
 </div>
 
@@ -92,10 +112,6 @@ h4
 </div>
 
 
-<div class="testParent">
-  <div class="testChild">
-  </div>
-</div>
 
 
 </main>
@@ -109,12 +125,14 @@ export default {
     return {
       femaleAvatar: "src/assets/images/femaleAvatar.svg",
       femaleAvatarWave: "src/assets/images/femaleAvatarWave.svg",
-      hover: false
+      hoverFemaleImg: false,
+      showP: false,
+
     }
   },
   computed: {
     femaleAvatarHover() {
-      if(this.hover == true) {
+      if(this.hoverFemaleImg == true) {
         return this.femaleAvatarWave
       } else {
         return this.femaleAvatar
@@ -128,17 +146,21 @@ export default {
 
 
 <style scoped>
-/* Testing CSS  */
+/* ------------ Vue Transition ------------  */
+.enter-from {
+  opacity: 0;
+}
 
-/* ------------ STATS Animation ------------ */
-/* .statsImage {
-  width: 50%;
-  text-align: left;
-  color: black;
-  padding-left: 1rem;
-  background-color: #07313d;
-} */
+.enter-to {
+  opacity: 1;
+}
 
+.enter-active {
+  transition: opacity 2s ease;
+}
+
+
+/* ------------ Modal ------------ */
 .modalBtnContainer {
   display: flex;
   justify-content: center;
@@ -167,11 +189,7 @@ export default {
 
 }
 
-/* .animationContainer {
-  background-color: rgb(224, 241, 255);
-  padding: 20px;
-  ;
-} */
+/* ------------ STATS Animation ------------ */
 .statsTextContainer {
   /* Child 2 */
   background-color: rgb(221, 237, 255);
@@ -274,12 +292,9 @@ margin-top: 2rem;
   }
 }
 
-
-
-
-
-
 /* ------------ Stats animation end ------------  */
+
+/* ------------ Female avatar Card container ------------ */
 .cardTextContainer {
   display: flex;
   flex-direction: row;
@@ -345,11 +360,10 @@ body {
 
 }
 
-/* ----------- Images ------------ */
+/* ----------- Images for Female Avatar Card Component ------------ */
 
 
 .cardContainer {
-  /* background-color: pink; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -363,7 +377,21 @@ body {
   cursor: pointer;
   
 }
+/* ----------- Arrow Button for avatar ----------- */
+.arrowImg {
+width: 60px;
+margin-left: 2rem;
+}
 
+.arrowImg:hover {
+  border-radius: 15px;
+  transition: 0.4;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
+  }
+
+
+
+/* ----------- Image on top of Blue background Home page ----------- BROKEN */
 .homeImg {
 float: right;
 /* display: flex;
@@ -375,16 +403,6 @@ top: -8rem;
 
 }
 
-.arrowImg {
-width: 60px;
-margin-left: 2rem;
-}
-
-.arrowImg:hover {
-  border-radius: 15px;
-  transition: 0.4;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
-  }
 
 
 
@@ -427,12 +445,6 @@ hr {
   background: white;
   margin-left: 1rem;
 
-  /*   position: relative;
-        top: 20px;
-        border: none;
-        height: 12px;
-        background: black;
-        margin-bottom: 50px; */
 }
 
 
@@ -440,6 +452,7 @@ h4 {
   margin-left: 1rem;
 
 }
+
 h1 {
   font-weight: 600;
   font-size: 42px;
