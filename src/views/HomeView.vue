@@ -33,13 +33,14 @@ TRANSITION NAMES
 
  -->
 
-<transition>
+
   <div class="transitionTest" v-if="showP">
   <button class="learnBtn" id="learnMore">Learn more</button>  
   <button class="galleryBtn">Gallery </button>  
   <!-- Toggle inline -->
-    <button @click="showP = !showP">toggle</button>
-</div>
+  <transition>
+  <button @click="showP = !showP">toggle</button>
+
 </transition>
 </div>
 </div>
