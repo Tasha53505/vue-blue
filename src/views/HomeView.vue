@@ -33,15 +33,16 @@ TRANSITION NAMES
 
  -->
 
-
-  <div class="transitionTest" v-if="showP">
-  <button class="learnBtn" id="learnMore">Learn more</button>  
-  <button class="galleryBtn">Gallery </button>  
+ <transition>
+  <div class="transitionTest" v-if="showExample">
+    <button class="learnBtn" id="learnMore">Learn more</button>  
+    <button class="galleryBtn">Gallery </button>  
   <!-- Toggle inline -->
-  <transition>
-  <button @click="showP = !showP">toggle</button>
-
+    <button @click="showExample = !showExample"></button>
+</div>
 </transition>
+
+  <!-- <button @click="showExample = !showExample">toggle</button> -->
 </div>
 </div>
 
@@ -127,7 +128,7 @@ export default {
       femaleAvatar: "src/assets/images/femaleAvatar.svg",
       femaleAvatarWave: "src/assets/images/femaleAvatarWave.svg",
       hoverFemaleImg: false,
-      showP: false,
+      showExample: false,
 
     }
   },
