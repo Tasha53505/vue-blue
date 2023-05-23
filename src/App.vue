@@ -1,11 +1,13 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue'
+import FormGatherData from './components/FormGatherData.vue';
 
 </script>
 
 <template>
 <NavBar />
+<FormGatherData />
 
 </template>
 

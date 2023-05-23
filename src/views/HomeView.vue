@@ -33,18 +33,21 @@ TRANSITION NAMES
 
  -->
 
- <transition>
+ <transition name="fade">
   <div class="transitionTest" v-if="showExample">
     <button class="learnBtn" id="learnMore">Learn more</button>  
     <button class="galleryBtn">Gallery </button>  
   <!-- Toggle inline -->
-    <button @click="showExample = !showExample"></button>
+
 </div>
 </transition>
 
+
   <!-- <button @click="showExample = !showExample">toggle</button> -->
 </div>
+
 </div>
+<button @click="showExample = !showExample">Toggle View</button>
 
 
 
@@ -148,18 +151,35 @@ export default {
 
 
 <style scoped>
-/* ------------ Vue Transition ------------  */
-.enter-from {
+/* ------------ Vue Transition Fade ------------  */
+.fade-enter-from {
   opacity: 0;
 }
 
-.enter-to {
+/* Even if we comment this out below, it will still work. This is because the default state IS opacity 1.  */
+.fade-enter-to {
+  opacity: 1;
+  
+}
+
+.fade-enter-active {
+  transition: all 1s ease;   /*  Can also say "opacity" if you want to transfer JUST the opacity of enter-to */
+
+}
+
+
+.fade-leave-from {
   opacity: 1;
 }
 
-.enter-active {
-  transition: opacity 2s ease;
+.fade-leave-to {
+  opacity: 0;
 }
+
+.fade-leave-active {
+  transition: all 1s ease;
+}
+
 
 
 /* ------------ Modal ------------ */
