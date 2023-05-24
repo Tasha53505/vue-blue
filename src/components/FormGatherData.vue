@@ -7,6 +7,8 @@
     <label>password</label>
     <input type="password" required v-model="password">
 
+    
+
   </form>
   <p>Email: {{ email }}</p>
   <p>password: {{ password }}</p>
