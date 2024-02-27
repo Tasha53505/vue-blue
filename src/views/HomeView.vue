@@ -128,6 +128,7 @@ export default {
   name: 'HomeView',
   data () {
     return {
+      // Variables
       femaleAvatar: "src/assets/images/femaleAvatar.svg",
       femaleAvatarWave: "src/assets/images/femaleAvatarWave.svg",
       hoverFemaleImg: false,
